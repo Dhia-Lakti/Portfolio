@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container navigation pt-3">
+      <div class="row">
+        <div class="col-6 d-flex justify-content-start align-items-center">
+          <i class="fas fa-code fa-2x text-warning pb-3"></i>
+          <h5 class="d-inline pl-2 text-white">Portfolio</h5>
+        </div>
+        <div class="col-6 pt-2">
+          <div
+            class="row text-center p-0 d-flex justify-content-end align-items-center"
+          >
+            <div class="col-3">
+              <a href="#about" class="text-white navigation-link">About</a>
+            </div>
+            <div class="col-3">
+              <a href="#projects" class="text-white navigation-link"
+                >Projects</a
+              >
+            </div>
+            <div class="col-3">
+              <a href="#social-media" class="text-white navigation-link"
+                >Social Media</a
+              >
+            </div>
+            <div class="col-3">
+              <a
+                href="https://packetcode.github.io/web-development-crash-course/resume-mini-project/"
+                target="_blank"
+                class="text-white navigation-link"
+                >Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container container">
+      <div class="row main_row">
+        <div class="col-6">
+          <h2 class="text-white">Hello, I'm</h2>
+          <h1 class="text-warning m-heading">DhiaEddine Lakti</h1>
+          <h2 class="text-white">SoftWare Engineer</h2>
+        </div>
+        <div class="col-6">
+          <img
+            src="https://www.pngkit.com/png/full/64-649699_man-png-transparent-free-images-transparent-background-man.png"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container about p-5">
+      <div class="row">
+        <div class="col-6">
+          <img src="./images/about_img.svg" class="img-fluid" />
+        </div>
+        <div class="col-6 pl-5 pt-5 pb-5 text-white">
+          <h3 class="text-warning">About Me</h3>
+          <h1 class="m-heading">A little bit about me</h1>
+          <p>
+            Hello! I,m Dhia, a Software Engineer based in Schmalkalden who's experienced in full-stack 
+            web and mobile development, AWS Cloud Architect and deployment, DevOps tools, 
+            and development CI/CD pipelines.
+          </p>
+          <br />
+          <p>
+            I'm attending Schmalkalden University of Applied Science as a computer science master's degree 
+            and working at full-stack labs.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="container mt-5 pt-5">
+      <h1 class="text-warning mb-3 pb-2">My Projects</h1>
+      <div class="row">
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem; height: 490px">
+            <img
+              src="./images/messaging.svg"
+              class="card-img-top"
+              style="height: 13rem;"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Online Dating App</h5>
+              <p class="card-text">
+                As part of a summer internship, i worked on this project that allow user 
+                to create a profile and interact with other users, with a feature of real-time chat.
+              </p>
+              <a data-toggle="modal" data-target="#modalRelatedContent" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;  height: 490px">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/007/942/207/original/outline-drawing-of-sustainable-house-in-hand-with-key-the-concept-of-building-housing-for-young-families-free-vector.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">House rental and sale management WebSite</h5>
+              <p class="card-text">
+                this site enables users to find houses or apartments confirmed with their needs 
+                and allows them too to publish houses for rent or sale. 
+              </p>
+              <a data-toggle="modal" data-target="#modalRelatedContent1" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem; height: 490px">
+            <img
+              src="./images/e_commerce_platform.svg"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">E-Commerce WebSite</h5>
+              <p class="card-text">
+                For a reason to increase sales in a textile store, i create an e-commerce website to
+                publish new products with categories and sales, that allow users to shop and pay online.
+              </p>
+              <a data-toggle="modal" data-target="#modalRelatedContent2" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem; height: 550px">
+            <img
+              src="https://ak.picdn.net/shutterstock/videos/1067715215/thumb/11.jpg?ip=x480"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Online Ticket App</h5>
+              <p class="card-text">
+                it's a mobile app that saves much time for users and limited their direct contact 
+                with people in places like banks and more, especially during corona pandemic, 
+                the app enables you to reserve your ticket online and with an estimated time of waiting.
+              </p>
+              <a data-toggle="modal" data-target="#modalRelatedContent3" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem; height: 550px">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9vBjUxIYzHO2z_FZNH0Seg5X1dR6d09v4Wn42w8IyXzGXPtCb1SOz8etzlIGacP3tAl8&usqp=CAU"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Camping And Hiking Management Website</h5>
+              <p class="card-text">
+                This website allows some users to publish events like camping and hiking and some 
+                users participate in these events and with the possibility to pay online.
+              </p>
+              <a data-toggle="modal" data-target="#modalRelatedContent4" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem; height: 550px">
+            <img
+              src="./images/web_scraping.svg"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">CRM (Customer Relationship Management)</h5>
+              <p class="card-text">
+                As part of a summer internship, i worked on this project that allow marking department
+                 to find their client target and their data like email, phone number and more, 
+                 to send them their offers and convince them to be future clients.
+              </p>
+              <a data-toggle="modal" data-target="#modalRelatedContent5" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media Section -->
+    <div id="social-media" class="container-fluid">
+      <div class="container text-white py-5">
+        <h4 class="text-warning">Social Media</h4>
+        <h1 class="m-heading">Let's be friends</h1>
+        <div class="row pt-5">
+          <div class="col-3 media_link btn">
+            <a href="https://www.linkedin.com/in/dhia-eddine-lakti-15a049212/" style="text-decoration: none;">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-white">LinkedIn</h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-linkedin-in fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div class="col-3 media_link btn">
+            <a href="https://github.com/Dhia-Lakti" style="text-decoration: none;">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-white">Github</h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-github fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div class="col-3 media_link btn">
+            <a href="https://github.com/Dhia-Lakti" style="text-decoration: none;">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-white">Xing</h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-youtube fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div class="col-3 media_link bg-warning btn">
+            <a href="mailto:dhia.laktie@gmail.com" style="text-decoration: none;">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-dark">Email</h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fas fa-envelope fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-muted text-center py-3 mt-5">
+        <h5>
+          Copyright &copy; 2022 |
+          <a class="text-warning text-decoration-none" href="#about"
+            >DhiaEddine Lakti</a
+          >
+        </h5>
+      </div>
+    </footer>
+
+
+
+    <div class="modal fade right" id="modalRelatedContent" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content" style="width: 700px; height: 500px;">
+      <!--Header-->
+      <div class="modal-header" style="background-color: #f5ba09; height: 40px;">
+        <p class="heading">Online Dating App</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body" style="margin-top: 20px;">
+
+        <div class="row">
+          <div class="col-5">
+            <img src="images/Capture.PNG"
+              class="img-fluid" alt="">
+          </div>
+
+          <div class="col-7">
+            <p><strong>Technologies</strong></p>
+            <p>
+              <ul>
+                <li>Flutter</li>
+                <li>Json-Server</li>
+                <li>WebSocket</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<div class="modal fade right" id="modalRelatedContent1" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content" style="width: 700px; height: 500px;">
+      <!--Header-->
+      <div class="modal-header" style="background-color: #f5ba09; height: 40px;">
+        <p class="heading">House rental and sale management WebSite</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body" style="margin-top: 20px;">
+
+        <div class="row">
+          <div class="col-5">
+            <img src="https://www.upkeepmedia.com/wp-content/uploads/2017/12/Trulia.png"
+              class="img-fluid" alt="">
+          </div>
+
+          <div class="col-7">
+            <p><strong>Technologies</strong></p>
+            <p>
+              <ul>
+                <li>Django</li>
+                <li>React</li>
+                <li>PostgreSQL</li>
+                <li>Postman</li>
+                <li>DevOps</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<div class="modal fade right" id="modalRelatedContent2" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content" style="width: 700px; height: 500px;">
+      <!--Header-->
+      <div class="modal-header" style="background-color: #f5ba09; height: 40px;">
+        <p class="heading">E-Commerce WebSite</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body" style="margin-top: 20px;">
+
+        <div class="row">
+          <div class="col-5">
+            <img src="https://images-platform.99static.com//ZUU0DJkgfiPJzVKTgSEaii6H9G8=/5x0:1705x1700/fit-in/590x590/99designs-contests-attachments/111/111213/attachment_111213383"
+              class="img-fluid" alt="">
+          </div>
+
+          <div class="col-7">
+            <p><strong>Technologies</strong></p>
+            <p>
+              <ul>
+                <li>Symfony</li>
+                <li>Bootstrap</li>
+                <li>MySQL</li>
+                <li>Postman</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<div class="modal fade right" id="modalRelatedContent3" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content" style="width: 700px; height: 500px;">
+      <!--Header-->
+      <div class="modal-header" style="background-color: #f5ba09; height: 40px;">
+        <p class="heading">Online Ticket App</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body" style="margin-top: 20px;">
+
+        <div class="row">
+          <div class="col-5">
+            <img src="images/Capture1.PNG"
+              class="img-fluid" alt="">
+          </div>
+
+          <div class="col-7">
+            <p><strong>Technologies</strong></p>
+            <p>
+              <ul>
+                <li>Flutter</li>
+                <li>Json-Server</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<div class="modal fade right" id="modalRelatedContent4" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content" style="width: 700px; height: 500px;">
+      <!--Header-->
+      <div class="modal-header" style="background-color: #f5ba09; height: 40px;">
+        <p class="heading">Camping And Hiking Management Website</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body" style="margin-top: 20px;">
+
+        <div class="row">
+          <div class="col-5">
+            <img src="https://cdn.freebiesupply.com/images/large/1x/camping-website-design-d37.jpg"
+              class="img-fluid" alt="">
+          </div>
+
+          <div class="col-7">
+            <p><strong>Technologies</strong></p>
+            <p>
+              <ul>
+                <li>Spring Boot</li>
+                <li>Angular</li>
+                <li>MySQL</li>
+                <li>Postman</li>
+                <li>Bootstrap</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<div class="modal fade right" id="modalRelatedContent5" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content" style="width: 700px; height: 500px;">
+      <!--Header-->
+      <div class="modal-header" style="background-color: #f5ba09; height: 40px;">
+        <p class="heading">CRM (Customer Relationship Management)</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body" style="margin-top: 20px;">
+
+        <div class="row">
+          <div class="col-5">
+            <img src="https://www.agilecrm.com/img/dashboard-new/dashboard.png"
+              class="img-fluid" alt="">
+          </div>
+
+          <div class="col-7">
+            <p><strong>Technologies</strong></p>
+            <p>
+              <ul>
+                <li>Django</li>
+                <li>VueJS</li>
+                <li>Axios</li>
+                <li>MySQL</li>
+                <li>Postman</li>
+                <li>Bootstrap</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+  </body>
+</html>
